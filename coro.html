@@ -10,7 +10,7 @@
     
     <title>1   Shrapnel/Coro &mdash; Shrapnel 1.0.2 documentation</title>
     
-    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -25,6 +25,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sidebar.js"></script>
     <link rel="top" title="Shrapnel 1.0.2 documentation" href="index.html" /> 
   </head>
   <body>
@@ -34,75 +35,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
         <li><a href="index.html">Shrapnel 1.0.2 documentation</a> &raquo;</li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Shrapnel/Coro</a><ul>
-<li><a class="reference internal" href="#threads">1.1&nbsp;&nbsp;&nbsp;Threads</a></li>
-<li><a class="reference internal" href="#kqueue-kevent">1.2&nbsp;&nbsp;&nbsp;kqueue()/kevent()</a></li>
-<li><a class="reference internal" href="#non-blocking-operations">1.3&nbsp;&nbsp;&nbsp;Non-Blocking Operations</a><ul>
-<li><a class="reference internal" href="#non-blocking-sockets">1.3.1&nbsp;&nbsp;&nbsp;Non-Blocking Sockets</a></li>
-<li><a class="reference internal" href="#aio-signals-etc">1.3.2&nbsp;&nbsp;&nbsp;aio(), signals, etc...</a></li>
-<li><a class="reference internal" href="#the-scheduler">1.3.3&nbsp;&nbsp;&nbsp;The Scheduler</a></li>
-<li><a class="reference internal" href="#selfishness">1.3.4&nbsp;&nbsp;&nbsp;&#8216;Selfishness&#8217;</a></li>
-<li><a class="reference internal" href="#the-priority-queue">1.3.5&nbsp;&nbsp;&nbsp;The Priority Queue</a></li>
-<li><a class="reference internal" href="#timeouts">1.3.6&nbsp;&nbsp;&nbsp;Timeouts</a><ul>
-<li><a class="reference internal" href="#with-timeout">1.3.6.1&nbsp;&nbsp;&nbsp;with_timeout()</a></li>
-<li><a class="reference internal" href="#with-timeout-style-high-and-low-level-timeouts">1.3.6.2&nbsp;&nbsp;&nbsp;with_timeout() Style... High and Low-Level Timeouts.</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#synchronization-primitives">1.3.7&nbsp;&nbsp;&nbsp;Synchronization Primitives</a></li>
-<li><a class="reference internal" href="#exceptions">1.3.8&nbsp;&nbsp;&nbsp;Exceptions</a><ul>
-<li><a class="reference internal" href="#coro-interrupted">1.3.8.1&nbsp;&nbsp;&nbsp;coro.Interrupted</a></li>
-<li><a class="reference internal" href="#coro-timeouterror">1.3.8.2&nbsp;&nbsp;&nbsp;coro.TimeoutError</a></li>
-<li><a class="reference internal" href="#coro-scheduleerror">1.3.8.3&nbsp;&nbsp;&nbsp;coro.ScheduleError</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#time-scale">1.3.9&nbsp;&nbsp;&nbsp;Time Scale</a><ul>
-<li><a class="reference internal" href="#user-time">1.3.9.1&nbsp;&nbsp;&nbsp;User Time</a></li>
-<li><a class="reference internal" href="#tsc-time">1.3.9.2&nbsp;&nbsp;&nbsp;TSC Time</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#rpc">1.3.10&nbsp;&nbsp;&nbsp;RPC</a></li>
-<li><a class="reference internal" href="#ssl">1.3.11&nbsp;&nbsp;&nbsp;SSL</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#precious-resources">1.4&nbsp;&nbsp;&nbsp;Precious Resources</a><ul>
-<li><a class="reference internal" href="#memory">1.4.1&nbsp;&nbsp;&nbsp;Memory</a></li>
-<li><a class="reference internal" href="#file-descriptors">1.4.2&nbsp;&nbsp;&nbsp;File Descriptors</a></li>
-<li><a class="reference internal" href="#cpu">1.4.3&nbsp;&nbsp;&nbsp;CPU</a></li>
-<li><a class="reference internal" href="#coro-profiler">1.4.4&nbsp;&nbsp;&nbsp;Coro Profiler</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#the-back-door">1.5&nbsp;&nbsp;&nbsp;The Back Door</a></li>
-</ul>
-</li>
-</ul>
-
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/coro.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -574,6 +512,72 @@ feature.</p>
           </div>
         </div>
       </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Shrapnel/Coro</a><ul>
+<li><a class="reference internal" href="#threads">1.1&nbsp;&nbsp;&nbsp;Threads</a></li>
+<li><a class="reference internal" href="#kqueue-kevent">1.2&nbsp;&nbsp;&nbsp;kqueue()/kevent()</a></li>
+<li><a class="reference internal" href="#non-blocking-operations">1.3&nbsp;&nbsp;&nbsp;Non-Blocking Operations</a><ul>
+<li><a class="reference internal" href="#non-blocking-sockets">1.3.1&nbsp;&nbsp;&nbsp;Non-Blocking Sockets</a></li>
+<li><a class="reference internal" href="#aio-signals-etc">1.3.2&nbsp;&nbsp;&nbsp;aio(), signals, etc...</a></li>
+<li><a class="reference internal" href="#the-scheduler">1.3.3&nbsp;&nbsp;&nbsp;The Scheduler</a></li>
+<li><a class="reference internal" href="#selfishness">1.3.4&nbsp;&nbsp;&nbsp;&#8216;Selfishness&#8217;</a></li>
+<li><a class="reference internal" href="#the-priority-queue">1.3.5&nbsp;&nbsp;&nbsp;The Priority Queue</a></li>
+<li><a class="reference internal" href="#timeouts">1.3.6&nbsp;&nbsp;&nbsp;Timeouts</a><ul>
+<li><a class="reference internal" href="#with-timeout">1.3.6.1&nbsp;&nbsp;&nbsp;with_timeout()</a></li>
+<li><a class="reference internal" href="#with-timeout-style-high-and-low-level-timeouts">1.3.6.2&nbsp;&nbsp;&nbsp;with_timeout() Style... High and Low-Level Timeouts.</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#synchronization-primitives">1.3.7&nbsp;&nbsp;&nbsp;Synchronization Primitives</a></li>
+<li><a class="reference internal" href="#exceptions">1.3.8&nbsp;&nbsp;&nbsp;Exceptions</a><ul>
+<li><a class="reference internal" href="#coro-interrupted">1.3.8.1&nbsp;&nbsp;&nbsp;coro.Interrupted</a></li>
+<li><a class="reference internal" href="#coro-timeouterror">1.3.8.2&nbsp;&nbsp;&nbsp;coro.TimeoutError</a></li>
+<li><a class="reference internal" href="#coro-scheduleerror">1.3.8.3&nbsp;&nbsp;&nbsp;coro.ScheduleError</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#time-scale">1.3.9&nbsp;&nbsp;&nbsp;Time Scale</a><ul>
+<li><a class="reference internal" href="#user-time">1.3.9.1&nbsp;&nbsp;&nbsp;User Time</a></li>
+<li><a class="reference internal" href="#tsc-time">1.3.9.2&nbsp;&nbsp;&nbsp;TSC Time</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#rpc">1.3.10&nbsp;&nbsp;&nbsp;RPC</a></li>
+<li><a class="reference internal" href="#ssl">1.3.11&nbsp;&nbsp;&nbsp;SSL</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#precious-resources">1.4&nbsp;&nbsp;&nbsp;Precious Resources</a><ul>
+<li><a class="reference internal" href="#memory">1.4.1&nbsp;&nbsp;&nbsp;Memory</a></li>
+<li><a class="reference internal" href="#file-descriptors">1.4.2&nbsp;&nbsp;&nbsp;File Descriptors</a></li>
+<li><a class="reference internal" href="#cpu">1.4.3&nbsp;&nbsp;&nbsp;CPU</a></li>
+<li><a class="reference internal" href="#coro-profiler">1.4.4&nbsp;&nbsp;&nbsp;Coro Profiler</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-back-door">1.5&nbsp;&nbsp;&nbsp;The Back Door</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/coro.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
       <div class="clearer"></div>
     </div>
     <div class="related">
@@ -582,6 +586,9 @@ feature.</p>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
         <li><a href="index.html">Shrapnel 1.0.2 documentation</a> &raquo;</li> 
       </ul>
     </div>

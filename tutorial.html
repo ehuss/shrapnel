@@ -10,7 +10,7 @@
     
     <title>1   Getting Started with Shrapnel &mdash; Shrapnel 1.0.2 documentation</title>
     
-    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
@@ -25,8 +25,8 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Shrapnel 1.0.2 documentation" href="index.html" />
-    <link rel="prev" title="Welcome to Shrapnel’s documentation!" href="index.html" /> 
+    <script type="text/javascript" src="_static/sidebar.js"></script>
+    <link rel="top" title="Shrapnel 1.0.2 documentation" href="index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -36,77 +36,11 @@
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="index.html" title="Welcome to Shrapnel’s documentation!"
-             accesskey="P">previous</a> |</li>
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
         <li><a href="index.html">Shrapnel 1.0.2 documentation</a> &raquo;</li> 
       </ul>
-    </div>
-      <div class="sphinxsidebar">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Getting Started with Shrapnel</a><ul>
-<li><a class="reference internal" href="#intro">1.1&nbsp;&nbsp;&nbsp;Intro</a><ul>
-<li><a class="reference internal" href="#features">1.1.1&nbsp;&nbsp;&nbsp;Features</a></li>
-<li><a class="reference internal" href="#the-name">1.1.2&nbsp;&nbsp;&nbsp;The Name</a></li>
-<li><a class="reference internal" href="#installing">1.1.3&nbsp;&nbsp;&nbsp;Installing</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#basics">1.2&nbsp;&nbsp;&nbsp;Basics</a><ul>
-<li><a class="reference internal" href="#event-loop">1.2.1&nbsp;&nbsp;&nbsp;Event Loop</a></li>
-<li><a class="reference internal" href="#interaction">1.2.2&nbsp;&nbsp;&nbsp;Interaction</a></li>
-<li><a class="reference internal" href="#output">1.2.3&nbsp;&nbsp;&nbsp;Output</a></li>
-<li><a class="reference internal" href="#sleeping">1.2.4&nbsp;&nbsp;&nbsp;Sleeping</a></li>
-<li><a class="reference internal" href="#starting-a-new-thread">1.2.5&nbsp;&nbsp;&nbsp;Starting a New Thread</a></li>
-<li><a class="reference internal" href="#starting-a-lot-of-new-threads">1.2.6&nbsp;&nbsp;&nbsp;Starting A <em>Lot</em> of New Threads</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#servers-and-clients">1.3&nbsp;&nbsp;&nbsp;Servers and Clients</a><ul>
-<li><a class="reference internal" href="#echo-server">1.3.1&nbsp;&nbsp;&nbsp;Echo Server</a></li>
-<li><a class="reference internal" href="#timeouts">1.3.2&nbsp;&nbsp;&nbsp;Timeouts</a></li>
-<li><a class="reference internal" href="#exiting-the-event-loop">1.3.3&nbsp;&nbsp;&nbsp;Exiting The Event Loop</a></li>
-<li><a class="reference internal" href="#echo-client">1.3.4&nbsp;&nbsp;&nbsp;Echo Client</a></li>
-<li><a class="reference internal" href="#proxy-server">1.3.5&nbsp;&nbsp;&nbsp;Proxy Server</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#profiler">1.4&nbsp;&nbsp;&nbsp;Profiler</a></li>
-<li><a class="reference internal" href="#the-killer-demo">1.5&nbsp;&nbsp;&nbsp;The Killer Demo</a></li>
-<li><a class="reference internal" href="#details">1.6&nbsp;&nbsp;&nbsp;Details</a><ul>
-<li><a class="reference internal" href="#exceptions">1.6.1&nbsp;&nbsp;&nbsp;Exceptions</a></li>
-<li><a class="reference internal" href="#latency-warnings">1.6.2&nbsp;&nbsp;&nbsp;Latency Warnings</a></li>
-<li><a class="reference internal" href="#simultaneouserror">1.6.3&nbsp;&nbsp;&nbsp;SimultaneousError</a></li>
-<li><a class="reference internal" href="#things-to-avoid">1.6.4&nbsp;&nbsp;&nbsp;Things To Avoid</a></li>
-<li><a class="reference internal" href="#how-it-works">1.6.5&nbsp;&nbsp;&nbsp;How it Works</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#credits">1.7&nbsp;&nbsp;&nbsp;Credits</a></li>
-</ul>
-</li>
-</ul>
-
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Welcome to Shrapnel&#8217;s documentation!</a></p>
-  <h3>This Page</h3>
-  <ul class="this-page-menu">
-    <li><a href="_sources/tutorial.txt"
-           rel="nofollow">Show Source</a></li>
-  </ul>
-<div id="searchbox" style="display: none">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -779,6 +713,69 @@ maybe with home page links?]</p>
           </div>
         </div>
       </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1&nbsp;&nbsp;&nbsp;Getting Started with Shrapnel</a><ul>
+<li><a class="reference internal" href="#intro">1.1&nbsp;&nbsp;&nbsp;Intro</a><ul>
+<li><a class="reference internal" href="#features">1.1.1&nbsp;&nbsp;&nbsp;Features</a></li>
+<li><a class="reference internal" href="#the-name">1.1.2&nbsp;&nbsp;&nbsp;The Name</a></li>
+<li><a class="reference internal" href="#installing">1.1.3&nbsp;&nbsp;&nbsp;Installing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#basics">1.2&nbsp;&nbsp;&nbsp;Basics</a><ul>
+<li><a class="reference internal" href="#event-loop">1.2.1&nbsp;&nbsp;&nbsp;Event Loop</a></li>
+<li><a class="reference internal" href="#interaction">1.2.2&nbsp;&nbsp;&nbsp;Interaction</a></li>
+<li><a class="reference internal" href="#output">1.2.3&nbsp;&nbsp;&nbsp;Output</a></li>
+<li><a class="reference internal" href="#sleeping">1.2.4&nbsp;&nbsp;&nbsp;Sleeping</a></li>
+<li><a class="reference internal" href="#starting-a-new-thread">1.2.5&nbsp;&nbsp;&nbsp;Starting a New Thread</a></li>
+<li><a class="reference internal" href="#starting-a-lot-of-new-threads">1.2.6&nbsp;&nbsp;&nbsp;Starting A <em>Lot</em> of New Threads</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#servers-and-clients">1.3&nbsp;&nbsp;&nbsp;Servers and Clients</a><ul>
+<li><a class="reference internal" href="#echo-server">1.3.1&nbsp;&nbsp;&nbsp;Echo Server</a></li>
+<li><a class="reference internal" href="#timeouts">1.3.2&nbsp;&nbsp;&nbsp;Timeouts</a></li>
+<li><a class="reference internal" href="#exiting-the-event-loop">1.3.3&nbsp;&nbsp;&nbsp;Exiting The Event Loop</a></li>
+<li><a class="reference internal" href="#echo-client">1.3.4&nbsp;&nbsp;&nbsp;Echo Client</a></li>
+<li><a class="reference internal" href="#proxy-server">1.3.5&nbsp;&nbsp;&nbsp;Proxy Server</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#profiler">1.4&nbsp;&nbsp;&nbsp;Profiler</a></li>
+<li><a class="reference internal" href="#the-killer-demo">1.5&nbsp;&nbsp;&nbsp;The Killer Demo</a></li>
+<li><a class="reference internal" href="#details">1.6&nbsp;&nbsp;&nbsp;Details</a><ul>
+<li><a class="reference internal" href="#exceptions">1.6.1&nbsp;&nbsp;&nbsp;Exceptions</a></li>
+<li><a class="reference internal" href="#latency-warnings">1.6.2&nbsp;&nbsp;&nbsp;Latency Warnings</a></li>
+<li><a class="reference internal" href="#simultaneouserror">1.6.3&nbsp;&nbsp;&nbsp;SimultaneousError</a></li>
+<li><a class="reference internal" href="#things-to-avoid">1.6.4&nbsp;&nbsp;&nbsp;Things To Avoid</a></li>
+<li><a class="reference internal" href="#how-it-works">1.6.5&nbsp;&nbsp;&nbsp;How it Works</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#credits">1.7&nbsp;&nbsp;&nbsp;Credits</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/tutorial.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
       <div class="clearer"></div>
     </div>
     <div class="related">
@@ -788,8 +785,8 @@ maybe with home page links?]</p>
           <a href="genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="index.html" title="Welcome to Shrapnel’s documentation!"
-             >previous</a> |</li>
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
         <li><a href="index.html">Shrapnel 1.0.2 documentation</a> &raquo;</li> 
       </ul>
     </div>
